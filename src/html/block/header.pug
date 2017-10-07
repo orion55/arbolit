@@ -1,0 +1,23 @@
+header.header
+    .header__wrap.row
+        .logo.col-lg-1
+            a.logo__link(href="#")
+                img.logo__img(src="img/logo.png" alt="logo")
+
+        nav.nav.col-lg-7
+            ul.nav__list
+                - var links = ['О нас', 'Расчёт стоимости', 'Преимущества', 'Заказ', 'Контакты'];
+                    each val in links
+                        li.nav__item
+                            a.nav__link(href="#")= val
+
+        .phone.col-lg-4
+            .phone__item
+                .phone__number
+                    span.phone__wide +7 (495)
+                    span.phone__normal 593-12-43
+                .phone__time
+                    span.phone__wide ПН-СБ
+                    span.phone__normal 10:00-20:00
+            .phone__btn
+                a.btn.btn--phone(href="#") Заказать звонок
