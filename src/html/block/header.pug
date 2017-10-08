@@ -1,7 +1,7 @@
 header.header
     .header__wrap.row
         .logo.col-lg-1
-            a.logo__link(href="#")
+            a.logo__link.hvr-bounce-in(href="#")
                 img.logo__img(src="img/logo.png" alt="logo")
 
         nav.nav.col-lg-7
@@ -9,7 +9,7 @@ header.header
                 - var links = ['О нас', 'Расчёт стоимости', 'Преимущества', 'Заказ', 'Контакты'];
                     each val in links
                         li.nav__item
-                            a.nav__link(href="#")= val
+                            a.nav__link.hvr-underline-from-center(href="#")= val
 
         .phone.col-lg-4
             .phone__item
@@ -20,4 +20,4 @@ header.header
                     span.phone__wide ПН-СБ
                     span.phone__normal 10:00-20:00
             .phone__btn
-                a.btn.btn--phone(href="#") Заказать звонок
+                a.btn.btn--phone.hvr-radial-out(href="#") Заказать звонок

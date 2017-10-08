@@ -75,7 +75,7 @@ gulp.task('pug', function () {
 });
 
 gulp.task('images', function () {
-    gulp.src(['src/img/*'])
+    gulp.src(['src/img/**/*'])
         .pipe(plumber({
             handleError: function (err) {
                 console.log(err);
@@ -147,7 +147,7 @@ gulp.task('watch', function () {
     gulp.watch('src/js/*.js', ['js']);
     gulp.watch('src/css/**/*.scss', ['sass']);
     gulp.watch('src/html/**/*.pug', ['pug']);
-    gulp.watch('src/img/**/*', ['image']);
+    gulp.watch('src/img/**/*', ['images']);
 });
 
 gulp.task('default', ['pug', 'sass', 'js', 'images', 'fonts', 'vendor', 'watch']);

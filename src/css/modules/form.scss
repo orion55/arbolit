@@ -1,0 +1,17 @@
+.form__input {
+  padding: 0.5em 0.6em;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #8b8b8b;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  border: solid #282727 1px;
+  background-color: #171717;
+}
+
+.form__bid {
+  display: flex;
+  flex-direction: column;
+}

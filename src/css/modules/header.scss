@@ -1,5 +1,6 @@
 .header {
-  background-color: $color-text;
+  background-color: #171717;
+
 }
 
 .header__wrap {
@@ -28,6 +29,7 @@
 .nav__link {
   color: #8B8B8B;
   font-size: 16px;
+  transition: color .7s ease;
 
   &:hover {
     color: white;
@@ -45,7 +47,7 @@
 }
 
 .phone__btn {
-  padding-top: 19px;
+  padding-top: 12px;
 }
 
 .phone__wide {

@@ -1,3 +1,37 @@
 extends block/main.layout.pug
 
 block content
+    .promo
+        .promo__wrap.row
+            .promo__wrapper.col-lg-10.col-lg-offset-1
+                .promo__text Производство и доставка арболитовых блоков в Челябинской и Оренбургской области, а также в республике Башкортостан
+            .promo__item.col-lg-8.col-lg-offset-2
+                    .promo__title Платите за отопление в
+                        span.promo__separator
+                        = ' раза меньше благодаря использованию арболитовых блоков при строительстве дома!'
+                    .promo_bigdigital 2
+            .promo__item
+                .promo__form.bid
+                    .bid__block
+                        .bid__title Получите прайс-лист и
+                        .bid__red бесплатную партию
+                        .bid__title из блоков
+                    form.form__bid(method="post" action="#" name="bid__form")
+                        .bid_group
+                            input.form__input(type="text" placeholder="Ваше имя" name="name")
+                            input.form__input(type="text" placeholder="+7 000-000-00-00" name="phone")
+                            input.form__input(type="email" placeholder="Ваш email" name="email")
+                        button.btn.btn--bid.hvr-radial-out(type="submit") Оставить заявку
+                .promo__symbol.col-lg-6
+                    .promo__row-1
+                        .promo__contour
+                            .promo-img.promo-img-01
+                        .promo__lead Хвойные и лиственные породы особого размера
+                    .promo__row-2
+                        .promo-img.promo-img-02
+                        .promo__slogan Производятся из экологически чистого материала
+                        .promo__square
+                        .promo-img.promo-img-03
+                    .promo__row-3
+                        .promo-img.promo-img-04
+
