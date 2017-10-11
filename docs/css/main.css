@@ -1390,7 +1390,9 @@ a:hover
 
 .promo
 {
-    height: 693px; 
+    position: relative; 
+
+    height: 693px;
 
     background: url(../img/promo/background.jpg) center top;
 }
@@ -1673,62 +1675,6 @@ a:hover
     left: 58%;
 }
 
-.features
-{
-    display: block; 
-
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-}
-
-.features-11
-{
-    width: 58px;
-    height: 58px;
-
-    background-position: -5px -5px;
-}
-
-.features-12
-{
-    width: 64px;
-    height: 60px;
-
-    background-position: -73px -5px;
-}
-
-.features-13
-{
-    width: 40px;
-    height: 56px;
-
-    background-position: -147px -5px;
-}
-
-.features-14
-{
-    width: 66px;
-    height: 66px;
-
-    background-position: -197px -5px;
-}
-
-.features-15
-{
-    width: 55px;
-    height: 59px;
-
-    background-position: -273px -5px;
-}
-
-.features-16
-{
-    width: 52px;
-    height: 58px;
-
-    background-position: -338px -5px;
-}
-
 .form__input
 {
     font-size: 16px;
@@ -1760,15 +1706,23 @@ a:hover
     -ms-flex-direction: column;
 }
 
-.building__wrap
+.building
 {
+    position: absolute;
+    z-index: 1; 
+    bottom: -91px;
+    left: 50%;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-        flex-direction: row; 
+        flex-direction: row;
 
     width: 1170px;
     margin: 0 auto;
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1777,6 +1731,129 @@ a:hover
 
 .building__picture
 {
-    margin: 0; 
+    position: relative;
+
+    overflow: hidden;
+
+    width: 293px;
+    height: 183px;
+    margin: 0;
     padding: 0;
+
+    cursor: pointer;
+
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+.building__picture:hover .building__image
+{
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+}
+.building__picture:hover .building__title
+{
+    opacity: 0;
+}
+
+.building__image
+{
+    width: 100%;
+    height: auto;
+
+    -webkit-transition: -webkit-filter 1s ease;
+            transition: -webkit-filter 1s ease;
+            transition:         filter 1s ease;
+            transition:         filter 1s ease, -webkit-filter 1s ease; 
+
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+}
+
+.building__title
+{
+    font-size: 16px;
+    font-weight: 700;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transition: opacity 1s ease;
+            transition: opacity 1s ease;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    opacity: 1;
+    color: white;
+}
+
+.manufacture
+{
+    position: relative; 
+
+    height: 1397px;
+
+    background: url(../img/manufacture/background.jpg) center top;
+}
+
+.manufacture__wrap
+{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.manufacture-icon
+{
+    display: block; 
+
+    background-image: url(../img/manufacture/spritesheet.png);
+    background-repeat: no-repeat;
+}
+
+.manufacture-icon-11
+{
+    width: 58px;
+    height: 58px;
+
+    background-position: -5px -5px;
+}
+
+.manufacture-icon-12
+{
+    width: 64px;
+    height: 60px;
+
+    background-position: -73px -5px;
+}
+
+.manufacture-icon-13
+{
+    width: 40px;
+    height: 56px;
+
+    background-position: -147px -5px;
+}
+
+.manufacture-icon-14
+{
+    width: 66px;
+    height: 66px;
+
+    background-position: -197px -5px;
+}
+
+.manufacture-icon-15
+{
+    width: 55px;
+    height: 59px;
+
+    background-position: -273px -5px;
+}
+
+.manufacture-icon-16
+{
+    width: 52px;
+    height: 58px;
+
+    background-position: -338px -5px;
 }

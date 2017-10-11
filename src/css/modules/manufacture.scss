@@ -1,40 +1,51 @@
-.features {
-  background-image: url(spritesheet.png);
+.manufacture {
+  background: url(../img/manufacture/background.jpg) center top;
+  height: 1397px;
+  position: relative;
+}
+
+.manufacture__wrap {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.manufacture-icon {
+  background-image: url(../img/manufacture/spritesheet.png);
   background-repeat: no-repeat;
   display: block;
 }
 
-.features-11 {
+.manufacture-icon-11 {
   width: 58px;
   height: 58px;
   background-position: -5px -5px;
 }
 
-.features-12 {
+.manufacture-icon-12 {
   width: 64px;
   height: 60px;
   background-position: -73px -5px;
 }
 
-.features-13 {
+.manufacture-icon-13 {
   width: 40px;
   height: 56px;
   background-position: -147px -5px;
 }
 
-.features-14 {
+.manufacture-icon-14 {
   width: 66px;
   height: 66px;
   background-position: -197px -5px;
 }
 
-.features-15 {
+.manufacture-icon-15 {
   width: 55px;
   height: 59px;
   background-position: -273px -5px;
 }
 
-.features-16 {
+.manufacture-icon-16 {
   width: 52px;
   height: 58px;
   background-position: -338px -5px;

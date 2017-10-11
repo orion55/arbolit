@@ -1,11 +1,50 @@
-.building__wrap {
+.building {
   width: 1170px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  position: absolute;
+  bottom: -91px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .building__picture {
   padding: 0;
   margin: 0;
+  width: 293px;
+  height: 183px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    .building__image {
+      filter: grayscale(0);
+    }
+    .building__title {
+      opacity: 0;
+    }
+  }
+}
+
+.building__image {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 1s ease;
+}
+
+.building__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 1s ease;
+  color: white;
 }
