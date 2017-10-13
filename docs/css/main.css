@@ -1484,16 +1484,6 @@ a:hover
     color: #fff;
 }
 
-.promo_bigdigital
-{
-    font-size: 100px;
-    font-weight: 800;
-
-    text-align: center; 
-
-    color: #b42020;
-}
-
 .promo__item
 {
     display: -webkit-box;
@@ -1671,7 +1661,7 @@ a:hover
 .promo_bigdigital
 {
     position: absolute;
-    top: -29%;
+    top: -12%;
     left: 58%;
 }
 
@@ -1804,7 +1794,9 @@ a:hover
 
 .manufacture-icon
 {
-    display: block; 
+    display: block;
+
+    margin: 0 auto; 
 
     background-image: url(../img/manufacture/spritesheet.png);
     background-repeat: no-repeat;
@@ -1856,4 +1848,128 @@ a:hover
     height: 58px;
 
     background-position: -338px -5px;
+}
+
+.manufacture__box
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    margin-right: 8.333%;
+    padding-top: 163px;
+    padding-bottom: 99px; 
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.manufacture__title
+{
+    font-size: 18px;
+
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 12px; 
+
+    color: #171717;
+}
+
+.manufacture__container
+{
+    padding-top: 18px;
+    padding-bottom: 24px;
+
+    text-align: center;
+
+    border-right: solid #171717 1px;
+    border-bottom: solid #171717 1px;
+}
+
+.manufacture__container:nth-child(3n+3)
+{
+    border-right: none;
+}
+
+.manufacture__container:nth-child(n+4)
+{
+    border-bottom: none;
+}
+
+.manufacture__head
+{
+    font-size: 30px;
+    font-weight: 800;
+
+    padding-bottom: 47px; 
+
+    text-align: center;
+
+    color: #171717;
+}
+
+.manufacture__holder
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.manufacture__item
+{
+    position: relative;
+}
+
+.manufacture__text
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.manufacture__text--two
+{
+    top: auto;
+    right: 0;
+    bottom: 0; 
+    left: auto;
+}
+
+.manufacture__subtitle
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    text-align: center; 
+
+    color: #171717;
+}
+
+.manufacture__subtitle--two
+{
+    font-weight: 400;
+}
+
+.manufacture__holder--one
+{
+        flex-direction: column; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
 }

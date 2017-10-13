@@ -9,7 +9,7 @@ block content
                 .promo__title Платите за отопление в
                     span.promo__separator
                     = ' раза меньше благодаря использованию арболитовых блоков при строительстве дома!'
-                .promo_bigdigital 2
+                img.promo_bigdigital(src="/img/promo/two.png" alt="two")
             .promo__item
                 .promo__form
                     .bid__block
@@ -42,11 +42,11 @@ block content
                     .building__title= title
     .manufacture
         .manufacture__wrap
-            .manufacture__box.row
-            each title, x in {1:'Экологически чистый материал', 2:'Собственный цех по производству', 3:'Согласно ГОСТ-19222-84', 4:'Контрольные образцы испытываются в лаборатории', 5:'Работаем на рынке строительных материалов с 2013 года', 6:'Автоматизированное производство снижает уровень брака на 99%'}
-                .manufacture__container.col-xs-3
-                    .manufacture-icon(class='manufacture-icon-1' + x)
-                    .manufacture__title= title
+            .manufacture__box.row.col-xs-offset-1
+                each title, x in {1:'Экологически чистый материал', 2:'Собственный цех по производству', 3:'Согласно ГОСТ-19222-84', 4:'Контрольные образцы испытываются в лаборатории', 5:'Работаем на рынке строительных материалов с 2013 года', 6:'Автоматизированное производство снижает уровень брака на 99%'}
+                    .manufacture__container.col-xs-4
+                        .manufacture-icon(class='manufacture-icon-1' + x)
+                        .manufacture__title= title
 
             h2.manufacture__head Мы производим:
             .manufacture__holder
@@ -59,4 +59,5 @@ block content
                     .manufacture__text.manufacture__text--two 50х35х20 см
             .manufacture__holder.manufacture__holder--one
                 img.manufacture__img04(src="img/manufacture/block_two.png" alt="block_two")
-                .manufacture__subtitle Панели-перемычки: для перекрытия дверных и оконных проёмов
+                .manufacture__subtitle Панели-перемычки:
+                .manufacture__subtitle.manufacture__subtitle--two для перекрытия дверных и оконных проёмов

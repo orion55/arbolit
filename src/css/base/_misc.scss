@@ -80,6 +80,7 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-radial-out:before {
   content: "";
   position: absolute;
@@ -100,9 +101,11 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
   color: $color-red;
 }
+
 .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
   -webkit-transform: scale(2);
   transform: scale(2);
