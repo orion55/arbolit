@@ -14,7 +14,7 @@
 
 .btn--phone {
   font-size: 16px;
-  padding: 8px 32px;
+  padding: 8px 29px;
   font-weight: 700;
 }
 
@@ -28,4 +28,12 @@
   width: 287px;
   display: block;
   margin: 0 auto;
+}
+
+.btn--info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 105px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }

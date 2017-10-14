@@ -1,10 +1,119 @@
 .info {
   background: url(../img/info/background.jpg) center top;
   height: 2977px;
+  color: #171717;
 }
 
 .info__wrap {
   width: 1170px;
   margin: 0 auto;
   padding-top: 94px;
+}
+
+.info__head {
+  color: #171717;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.info__subhead {
+  color: #b41f1f;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.info__block {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 91px;
+}
+
+.info__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.info__title {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.info__subject {
+  color: #171717;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.info__digital {
+  padding-right: 27px;
+}
+
+.info__picture {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.info__list {
+  margin-left: 433px;
+  z-index: 1;
+}
+
+.info__box--four, .info__box--two {
+  padding-left: 2px;
+}
+
+.info__head--delivery {
+  padding-bottom: 41px;
+}
+
+.info__cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.info__container {
+  position: relative;
+}
+
+.info__container--one {
+  padding-right: 30px;
+}
+
+.info__lead {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 7px;
+}
+
+.info__truck {
+  padding-bottom: 11px;
+}
+
+.info_digital {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: -1;
+}
+
+.info__delivery {
+  position: relative;
+  padding-bottom: 96px;
 }
