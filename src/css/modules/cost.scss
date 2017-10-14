@@ -1,0 +1,55 @@
+.cost {
+  background: url(../img/cost/background.jpg) center top;
+  height: 604px;
+  position: relative;
+}
+
+.cost__wrap {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 94px;
+}
+
+.cost__head {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  width: 752px;
+  margin: 0 auto;
+  padding-bottom: 33px;
+}
+
+.cost__form {
+  background-color: #171717;
+  width: 752px;
+  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 38px;
+}
+
+.cost__text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 17px;
+}
+
+.cost__group {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 26px;
+}
+
+.cost__text--two {
+  padding-bottom: 20px;
+}
+
+.cost__radio {
+  padding-bottom: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

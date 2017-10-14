@@ -36,7 +36,7 @@
 				</div>
 				<div class="promo__item col-lg-8 col-lg-offset-2">
 					<div class="promo__title">Платите за отопление в<span class="promo__separator"></span> раза меньше благодаря использованию арболитовых блоков при строительстве дома!
-					</div><img class="promo_bigdigital" src="/img/promo/two.png" alt="two">
+					</div><img class="promo__bigdigital" src="/img/promo/two.png" alt="two">
 				</div>
 				<div class="promo__item">
 					<div class="promo__form">
@@ -46,7 +46,7 @@
 							<div class="bid__title">из блоков</div>
 						</div>
 						<form class="form__bid" method="post" action="#" name="bid__form">
-							<div class="bid_group">
+							<div class="bid__group">
 								<input class="form__input" type="text" placeholder="Ваше имя" name="name">
 								<input class="form__input" type="text" placeholder="+7 000-000-00-00" name="phone">
 								<input class="form__input" type="email" placeholder="Ваш email" name="email">
@@ -82,10 +82,10 @@
 		</div>
 		<div class="manufacture">
 			<div class="manufacture__wrap">
-				<div class="manufacture__box row col-xs-offset-1">
+				<div class="manufacture__box row">
 					<div class="manufacture__container col-xs-4">
 						<div class="manufacture-icon manufacture-icon-11"></div>
-						<div class="manufacture__title">Экологически чистый материал</div>
+						<div class="manufacture__title">Экологически<br /> чистый материал</div>
 					</div>
 					<div class="manufacture__container col-xs-4">
 						<div class="manufacture-icon manufacture-icon-12"></div>
@@ -93,7 +93,7 @@
 					</div>
 					<div class="manufacture__container col-xs-4">
 						<div class="manufacture-icon manufacture-icon-13"></div>
-						<div class="manufacture__title">Согласно ГОСТ-19222-84</div>
+						<div class="manufacture__title">Согласно<br />ГОСТ-19222-84</div>
 					</div>
 					<div class="manufacture__container col-xs-4">
 						<div class="manufacture-icon manufacture-icon-14"></div>
@@ -112,16 +112,49 @@
 				<div class="manufacture__holder">
 					<div class="manufacture__item"><img class="manufacture__img01" src="img/manufacture/one.png" alt="one">
 						<div class="manufacture__text manufacture__text--one">50х40х20 см</div>
-					</div><img class="manufacture__img02" src="img/manufacture/block_one.png" alt="block_one">
+					</div>
+					<div class="manufacture__block"><img class="manufacture__img02" src="img/manufacture/block_one.png" alt="block_one">
+						<div class="manufacture__info">Арболитовые блоки в двух размерах для удобства при строительстве</div>
+					</div>
 					<div class="manufacture__item"><img class="manufacture__img03" src="img/manufacture/two.png" alt="one">
 						<div class="manufacture__text manufacture__text--two">50х35х20 см</div>
 					</div>
 				</div>
 				<div class="manufacture__holder manufacture__holder--one"><img class="manufacture__img04" src="img/manufacture/block_two.png" alt="block_two">
 					<div class="manufacture__subtitle">Панели-перемычки:</div>
-					<div class="manufacture__subtitle manufacture__subtitle--two">для перекрытия дверных и оконных проёмов</div>
+					<div class="manufacture__subtitle">
+						<div class="manufacture__subtitle--two">для перекрытия дверных и оконных проёмов</div>
+					</div>
 				</div>
 			</div>
+		</div>
+		<div class="cost">
+			<div class="cost__wrap">
+				<div class="cost__head">Рассчитайте стоимость арболита для Вашего проекта и получите скидку</div>
+				<form class="cost__form" method="post" action="#" name="cost__form">
+					<div class="cost__text">Введите размеры стены</div>
+					<div class="cost__group">
+						<input class="form__input form__input--cost" type="text" placeholder="Длина стены" name="length_wall">
+						<input class="form__input form__input--cost" type="text" placeholder="Высота стены" name="height_wall">
+						<input class="form__input form__input--cost" type="text" placeholder="Ширина стены" name="width_wall">
+					</div>
+					<div class="cost__text cost__text--two">Выберите размер блока</div>
+					<div class="cost__radio">
+						<label class="control control-radio control-radio--one" for="cost-option-one">50х40х20 см
+							<input class="form__radio" id="cost-option-one" type="radio" name="radio" value="50х40х20" checked>
+							<div class="control_indicator"></div>
+						</label>
+						<label class="control control-radio" for="cost-option-two">50х35х20 см
+							<input class="form__radio" id="cost-option-two" type="radio" name="radio" value="50х35х20">
+							<div class="control_indicator"></div>
+						</label>
+					</div>
+					<button class="btn btn--cost hvr-radial-out" type="submit">Получить стоимость по смс</button>
+				</form>
+			</div>
+		</div>
+		<div class="info">
+			<div class="info__wrap"></div>
 		</div>
 		<link rel="stylesheet" href="css/vendor.min.css">
 		<link rel="stylesheet" href="css/main.min.css">

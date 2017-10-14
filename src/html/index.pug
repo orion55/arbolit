@@ -9,7 +9,7 @@ block content
                 .promo__title Платите за отопление в
                     span.promo__separator
                     = ' раза меньше благодаря использованию арболитовых блоков при строительстве дома!'
-                img.promo_bigdigital(src="/img/promo/two.png" alt="two")
+                img.promo__bigdigital(src="/img/promo/two.png" alt="two")
             .promo__item
                 .promo__form
                     .bid__block
@@ -17,7 +17,7 @@ block content
                         .bid__red бесплатную партию
                         .bid__title из блоков
                     form.form__bid(method="post" action="#" name="bid__form")
-                        .bid_group
+                        .bid__group
                             input.form__input(type="text" placeholder="Ваше имя" name="name")
                             input.form__input(type="text" placeholder="+7 000-000-00-00" name="phone")
                             input.form__input(type="email" placeholder="Ваш email" name="email")
@@ -42,22 +42,45 @@ block content
                     .building__title= title
     .manufacture
         .manufacture__wrap
-            .manufacture__box.row.col-xs-offset-1
-                each title, x in {1:'Экологически чистый материал', 2:'Собственный цех по производству', 3:'Согласно ГОСТ-19222-84', 4:'Контрольные образцы испытываются в лаборатории', 5:'Работаем на рынке строительных материалов с 2013 года', 6:'Автоматизированное производство снижает уровень брака на 99%'}
+            .manufacture__box.row
+                each title, x in {1:'Экологически<br /> чистый материал', 2:'Собственный цех по производству', 3:'Согласно<br />ГОСТ-19222-84', 4:'Контрольные образцы испытываются в лаборатории', 5:'Работаем на рынке строительных материалов с 2013 года', 6:'Автоматизированное производство снижает уровень брака на 99%'}
                     .manufacture__container.col-xs-4
                         .manufacture-icon(class='manufacture-icon-1' + x)
-                        .manufacture__title= title
+                        .manufacture__title!= title
 
             h2.manufacture__head Мы производим:
             .manufacture__holder
                 .manufacture__item
                     img.manufacture__img01(src="img/manufacture/one.png" alt="one")
                     .manufacture__text.manufacture__text--one 50х40х20 см
-                img.manufacture__img02(src="img/manufacture/block_one.png" alt="block_one")
+                .manufacture__block
+                    img.manufacture__img02(src="img/manufacture/block_one.png" alt="block_one")
+                    .manufacture__info Арболитовые блоки в двух размерах для удобства при строительстве
                 .manufacture__item
                     img.manufacture__img03(src="img/manufacture/two.png" alt="one")
                     .manufacture__text.manufacture__text--two 50х35х20 см
             .manufacture__holder.manufacture__holder--one
                 img.manufacture__img04(src="img/manufacture/block_two.png" alt="block_two")
                 .manufacture__subtitle Панели-перемычки:
-                .manufacture__subtitle.manufacture__subtitle--two для перекрытия дверных и оконных проёмов
+                .manufacture__subtitle
+                    .manufacture__subtitle--two для перекрытия дверных и оконных проёмов
+    .cost
+        .cost__wrap
+            .cost__head Рассчитайте стоимость арболита для Вашего проекта и получите скидку
+            form.cost__form(method="post" action="#" name="cost__form")
+                .cost__text Введите размеры стены
+                .cost__group
+                    input.form__input.form__input--cost(type="text" placeholder="Длина стены" name="length_wall")
+                    input.form__input.form__input--cost(type="text" placeholder="Высота стены" name="height_wall")
+                    input.form__input.form__input--cost(type="text" placeholder="Ширина стены" name="width_wall")
+                .cost__text.cost__text--two Выберите размер блока
+                .cost__radio
+                    label.control.control-radio.control-radio--one(for="cost-option-one") 50х40х20 см
+                        input.form__radio#cost-option-one(type="radio" name="radio" value="50х40х20" checked)
+                        .control_indicator
+                    label.control.control-radio(for="cost-option-two") 50х35х20 см
+                        input.form__radio#cost-option-two(type="radio" name="radio" value="50х35х20")
+                        .control_indicator
+                button.btn.btn--cost.hvr-radial-out(type="submit") Получить стоимость по смс
+    .info
+        .info__wrap
