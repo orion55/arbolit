@@ -18,8 +18,7 @@
   ],
   "dependencies": {
     "jquery": "^1.0.0",
-    "bxslider": "*",
     "normalize-css": "^7.0.0",
-    "font-awesome": "^4.7.0"
+    "slick-carousel": "^1.8.1"
   }
 }

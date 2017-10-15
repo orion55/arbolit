@@ -1400,11 +1400,19 @@ a:hover
 .btn--info
 {
     position: absolute;
-    bottom: 105px;
-    left: 50%;
+    bottom: 102px;
+    left: 48%;
 
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-48%);
+            transform: translateX(-48%);
+
+    -webkit-box-shadow: 0 0 8px black;
+            box-shadow: 0 0 8px black;
+}
+
+.btn--production
+{
+    margin-top: 8px;
 
     -webkit-box-shadow: 0 0 8px black;
             box-shadow: 0 0 8px black;
@@ -2340,13 +2348,15 @@ a:hover
 
 .info__digital
 {
+    width: auto; 
+    height: 100%;
     padding-right: 27px;
 }
 
 .info__picture
 {
     position: absolute;
-    top: 0; 
+    top: 22px; 
     left: 0;
 
     display: -webkit-box;
@@ -2434,4 +2444,75 @@ a:hover
     position: relative;
 
     padding-bottom: 96px;
+}
+
+.info__pict
+{
+    width: 140px;
+    height: 111px;
+}
+
+.info__bigpicture
+{
+    width: 988px;
+    height: 387px;
+    margin: 0 auto; 
+
+    background: url(../img/info/digital.png) center top;
+}
+
+.info__row
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    padding-top: 111px;
+
+    text-align: center; 
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+}
+
+.info__section--one
+{
+    width: 266px;
+    margin-right: 100px;
+    margin-left: 141px;
+}
+
+.info__section--two
+{
+    width: 386px;
+}
+
+.info__section--three
+{
+    width: 267px;
+    margin-right: 159px;
+}
+
+.info__section--four
+{
+    width: 276px;
+    margin-right: 220px;
+}
+
+.info__section--five
+{
+    width: 161px;
+}
+
+.info__paragraph--bold
+{
+    font-weight: 700;
+}
+
+.info__row--two
+{
+    margin-left: -73px; 
+    padding-top: 143px;
 }
