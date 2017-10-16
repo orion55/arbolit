@@ -80,9 +80,11 @@
   padding-bottom: 41px;
 }
 
-.info__cont {
+.info__contain {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .info__container {
@@ -170,4 +172,76 @@
 .info__row--two {
   padding-top: 143px;
   margin-left: -73px;
+}
+
+.info__production {
+  padding-bottom: 167px;
+}
+
+.info__head--process {
+  padding-bottom: 40px;
+}
+
+.info__bid {
+  padding: 29px 69px 30px 75px;
+  background-color: #171717;
+  margin-right: 43px;
+  float: left;
+  margin-top: 42px;
+}
+
+.info__bid-head {
+  color: #b42020;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info__bid-subhead {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info__bid-group {
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.info__slider {
+  position: relative;
+}
+
+.info__cont {
+  position: relative;
+}
+
+.slider__arrow-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -23px;
+  cursor: pointer;
+}
+
+.slider__arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -23px;
+  cursor: pointer;
+}
+
+.slider__pict {
+  width: auto;
+  height: 286px;
+}
+
+.slider__img {
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  border: solid #b42020 1px;
+  margin: 0 auto;
 }

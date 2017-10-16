@@ -1,15 +1,9 @@
 $(document).ready(function () {
-    $('#slider-main').bxSlider(
-        {
-            preloadImages: true,
-            mode: 'fade',
-            auto: true,
-            pause: 5000,
-            pager: false,
-            nextSelector: '#slider-next',
-            prevSelector: '#slider-prev',
-            nextText: 'Right',
-            prevText: 'Left'
-        }
-    );
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        cssEase: 'linear',
+        infinite: true
+    });
 });

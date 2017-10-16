@@ -113,6 +113,7 @@ gulp.task('vendor', function () {
         .pipe(jsFilter.restore);
 
     gulp.src(bowerFiles)
+        .pipe(print())
         .pipe(cssFilter)
         .pipe(concat('vendor.css'))
         .pipe(gulp.dest('docs/css'))

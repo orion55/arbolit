@@ -117,7 +117,7 @@ block content
                                 .info__subject арболитовые блоки состоят из цемента, воды, минеральных добавок и дробленки хвойных пород заданного размера.
             .info__delivery
                 .info__head.info__head--delivery Доставка:
-                .info__cont
+                .info__contain
                     .info__container.info__container--one
                         img.info__truck(src="img/info/truck01.jpg" alt="truck01")
                         .info__lead!= 'Доставка между<br /> городами с помощью фур'
@@ -146,14 +146,26 @@ block content
                         .info__section.info__section--five
                             .info__paragraph Мы заключаем договор поставки
             .info__process
-                .info__head Посмотреть процесс производства арболитовых блоков:
+                .info__head.info__head--process Посмотреть процесс производства арболитовых блоков:
                 .info__cont
                     .info__bid
                         .info__bid-head У Вас остались вопросы по производству материала?
                         .info__bid-subhead Мы с радостью ответим на них. Просто оставьте заявку.
                         form.form__bid(method="post" action="#" name="bid__form")
                             .info__bid-group
-                                input.form__input(type="text" placeholder="Ваше имя" name="name")
-                                input.form__input(type="text" placeholder="+7 000-000-00-00" name="phone")
-                            button.btn.btn--info.hvr-radial-out(type="submit") Оставить заявку
+                                input.form__input.form__input--bid(type="text" placeholder="Ваше имя" name="name")
+                                input.form__input.form__input--bid2(type="text" placeholder="+7 000-000-00-00" name="phone")
+                            button.btn.btn--process.hvr-radial-out(type="submit") Оставить заявку
                     .info__slider
+                        .slider
+                            .slider__pict
+                                img.slider__img(src="img/info/slider01.jpg" alt="slider01")
+                            .slider__pict
+                                img.slider__img(src="img/info/slider02.jpg" alt="slider02")
+                            .slider__pict
+                                img.slider__img(src="img/info/slider03.jpg" alt="slider03")
+                            //.slider__arrows
+                    .slider__arrow-left
+                        img.slider__arrow-left-pict(src="img/info/arrow-left.png" alt="slider__arrow-left")
+                    .slider__arrow-right
+                        img.slider__arrow-right-pict(src="img/info/arrow-right.png" alt="slider__arrow-right")

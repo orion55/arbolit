@@ -1418,6 +1418,19 @@ a:hover
             box-shadow: 0 0 8px black;
 }
 
+.btn--process
+{
+    font-size: 16px;
+    font-weight: 700;
+
+    width: 174px;
+    margin: 0 auto; 
+
+    text-align: center;
+
+    color: #fff;
+}
+
 .promo
 {
     position: relative; 
@@ -1731,6 +1744,17 @@ a:hover
     width: 130px;
     height: 35px;
     margin-right: 35px;
+}
+
+.form__input--bid
+{
+    width: 199px; 
+    margin-right: 59px;
+}
+
+.form__input--bid2
+{
+    width: 199px;
 }
 
 .building
@@ -2386,16 +2410,22 @@ a:hover
     padding-bottom: 41px;
 }
 
-.info__cont
+.info__contain
 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-        flex-direction: row; 
+        flex-direction: row;
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .info__container
@@ -2515,4 +2545,101 @@ a:hover
 {
     margin-left: -73px; 
     padding-top: 143px;
+}
+
+.info__production
+{
+    padding-bottom: 167px;
+}
+
+.info__head--process
+{
+    padding-bottom: 40px;
+}
+
+.info__bid
+{
+    float: left;
+
+    margin-top: 42px; 
+    margin-right: 43px;
+    padding: 29px 69px 30px 75px;
+
+    background-color: #171717;
+}
+
+.info__bid-head
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    text-align: center; 
+
+    color: #b42020;
+}
+
+.info__bid-subhead
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    padding-bottom: 20px; 
+
+    text-align: center;
+
+    color: white;
+}
+
+.info__bid-group
+{
+    margin: 0 auto; 
+    padding-bottom: 10px;
+}
+
+.info__slider
+{
+    position: relative;
+}
+
+.info__cont
+{
+    position: relative;
+}
+
+.slider__arrow-left
+{
+    position: absolute;
+    top: 50%;
+    left: -23px;
+
+    cursor: pointer; 
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.slider__arrow-right
+{
+    position: absolute;
+    top: 50%;
+    right: -23px;
+
+    cursor: pointer; 
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.slider__pict
+{
+    width: auto;
+    height: 286px;
+}
+
+.slider__img
+{
+    height: 100%;
+    margin: 0 auto; 
+
+    border: solid #b42020 1px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+            box-shadow: 0 0 8px rgba(0, 0, 0, .6);
 }

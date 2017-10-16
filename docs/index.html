@@ -6,6 +6,8 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
 	</head>
 	<body>
 		<header class="header">
@@ -194,7 +196,7 @@
 				</div>
 				<div class="info__delivery">
 					<div class="info__head info__head--delivery">Доставка:</div>
-					<div class="info__cont">
+					<div class="info__contain">
 						<div class="info__container info__container--one"><img class="info__truck" src="img/info/truck01.jpg" alt="truck01">
 							<div class="info__lead">Доставка между<br /> городами с помощью фур</div><img class="info_digital" src="img/info/truck-one.png" alt="truck-one">
 						</div>
@@ -230,27 +232,39 @@
 					</div>
 				</div>
 				<div class="info__process">
-					<div class="info__head">Посмотреть процесс производства арболитовых блоков:</div>
+					<div class="info__head info__head--process">Посмотреть процесс производства арболитовых блоков:</div>
 					<div class="info__cont">
 						<div class="info__bid">
 							<div class="info__bid-head">У Вас остались вопросы по производству материала?</div>
 							<div class="info__bid-subhead">Мы с радостью ответим на них. Просто оставьте заявку.</div>
 							<form class="form__bid" method="post" action="#" name="bid__form">
 								<div class="info__bid-group">
-									<input class="form__input" type="text" placeholder="Ваше имя" name="name">
-									<input class="form__input" type="text" placeholder="+7 000-000-00-00" name="phone">
+									<input class="form__input form__input--bid" type="text" placeholder="Ваше имя" name="name">
+									<input class="form__input form__input--bid2" type="text" placeholder="+7 000-000-00-00" name="phone">
 								</div>
-								<button class="btn btn--info hvr-radial-out" type="submit">Оставить заявку</button>
+								<button class="btn btn--process hvr-radial-out" type="submit">Оставить заявку</button>
 							</form>
 						</div>
-						<div class="info__slider"></div>
+						<div class="info__slider">
+							<div class="slider">
+								<div class="slider__pict"><img class="slider__img" src="img/info/slider01.jpg" alt="slider01"></div>
+								<div class="slider__pict"><img class="slider__img" src="img/info/slider02.jpg" alt="slider02"></div>
+								<div class="slider__pict"><img class="slider__img" src="img/info/slider03.jpg" alt="slider03"></div>
+								<!--.slider__arrows-->
+							</div>
+						</div>
+						<div class="slider__arrow-left"><img class="slider__arrow-left-pict" src="img/info/arrow-left.png" alt="slider__arrow-left"></div>
+						<div class="slider__arrow-right"><img class="slider__arrow-right-pict" src="img/info/arrow-right.png" alt="slider__arrow-right"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<link rel="stylesheet" href="css/vendor.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
-		<script src="js/vendor.min.js" defer></script>
+		<!--script(src="js/vendor.min.js" defer)-->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 		<script src="js/main.min.js" defer></script>
 	</body>
 </html>
