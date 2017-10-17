@@ -19,6 +19,8 @@ var mainBowerFiles = require('main-bower-files');
 var print = require('gulp-print');
 var gulpFilter = require('gulp-filter');
 var sassGlob = require('gulp-sass-glob');
+var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
 
 gulp.task('sass', function () {
     gulp.src(['src/css/main.scss'])
@@ -69,7 +71,6 @@ gulp.task('pug', function () {
             pretty: '\t',
             basedir: './'
         }))
-        // .pipe(minifyHtml())
         .pipe(gulp.dest('docs'))
         .pipe(reload({stream: true}))
 });
@@ -141,14 +142,40 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('docs/fonts'));
 });
 
+gulp.task('pug2', function () {
+    gulp.src(['src/html/*.pug'])
+        .pipe(plumber({
+            handleError: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(pug({
+            pretty: '\t',
+            basedir: './'
+        }))
+        .pipe(useref())
+        .pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.css', cleanCss()))
+        .pipe(gulp.dest('docs'))
+        .pipe(reload({stream: true}))
+});
+
+gulp.task('copy-file', function () {
+    gulp.src('src/bower/slick-carousel/slick/fonts/*.*')
+        .pipe(gulp.dest('docs/fonts/slick'));
+    return gulp.src('src/bower/slick-carousel/slick/ajax-loader.gif')
+        .pipe(gulp.dest('docs/img'));
+});
+
 gulp.task('watch', function () {
     browserSync.init({
         server: "./docs"
     });
     gulp.watch('src/js/*.js', ['js']);
     gulp.watch('src/css/**/*.scss', ['sass']);
-    gulp.watch('src/html/**/*.pug', ['pug']);
+    gulp.watch('src/html/**/*.pug', ['pug2']);
     gulp.watch('src/img/**/*', ['images']);
 });
 
-gulp.task('default', ['pug', 'sass', 'js', 'images', 'fonts', 'vendor', 'watch']);
+gulp.task('default', ['sass', 'js', 'images', 'fonts', 'pug2', 'copy-file', 'watch']);
