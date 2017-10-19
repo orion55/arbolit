@@ -10,6 +10,7 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn--phone {
@@ -33,9 +34,10 @@
 .btn--info {
   position: absolute;
   bottom: 102px;
-  left: 48%;
-  transform: translateX(-48%);
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+  width: 225px;
 }
 
 .btn--production {

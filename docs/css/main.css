@@ -1364,7 +1364,8 @@ a:hover
 
     padding: .5em 1em;
 
-    cursor: pointer; 
+    cursor: pointer;
+    text-align: center; 
     text-decoration: none;
 
     color: #444;
@@ -1402,10 +1403,12 @@ a:hover
 {
     position: absolute;
     bottom: 102px;
-    left: 48%;
+    left: 50%;
 
-    -webkit-transform: translateX(-48%);
-            transform: translateX(-48%);
+    width: 225px; 
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 
     -webkit-box-shadow: 0 0 8px black;
             box-shadow: 0 0 8px black;
@@ -2284,7 +2287,7 @@ a:hover
 
 .info
 {
-    height: 2977px;
+    height: 2942px;
 
     color: #171717; 
     background: url(../img/info/background.jpg) center top;
@@ -2294,7 +2297,7 @@ a:hover
 {
     width: 1170px;
     margin: 0 auto;
-    padding-top: 94px;
+    padding-top: 95px;
 }
 
 .info__head
@@ -2302,7 +2305,9 @@ a:hover
     font-size: 30px;
     font-weight: 800;
 
-    text-align: center; 
+    padding-bottom: 4px; 
+
+    text-align: center;
 
     color: #171717;
 }
@@ -2329,7 +2334,7 @@ a:hover
     display: flex;
         flex-direction: row;
 
-    padding-bottom: 91px; 
+    padding-bottom: 68px; 
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2474,7 +2479,12 @@ a:hover
 {
     position: relative;
 
-    padding-bottom: 96px;
+    padding-bottom: 92px;
+}
+
+.info__head--production
+{
+    padding-bottom: 3px;
 }
 
 .info__pict
@@ -2499,7 +2509,7 @@ a:hover
     display: flex;
         flex-direction: row;
 
-    padding-top: 111px;
+    padding-top: 108px;
 
     text-align: center; 
 
@@ -2545,12 +2555,12 @@ a:hover
 .info__row--two
 {
     margin-left: -73px; 
-    padding-top: 143px;
+    padding-top: 140px;
 }
 
 .info__production
 {
-    padding-bottom: 167px;
+    padding-bottom: 154px;
 }
 
 .info__head--process
@@ -2600,6 +2610,8 @@ a:hover
 .info__slider
 {
     position: relative;
+
+    margin-bottom: 114px;
 }
 
 .info__cont
@@ -2643,6 +2655,44 @@ a:hover
     border: solid #b42020 1px;
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .6);
             box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+}
+
+.info__life
+{
+    position: relative;
+}
+
+.info_head--life
+{
+    padding-bottom: 31px;
+}
+
+.slid__pict
+{
+    width: auto;
+    height: 335px;
+}
+
+.slid__arrow-left
+{
+    position: absolute;
+    top: 61%;
+    left: -3%;
+
+    cursor: pointer; 
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.slid__arrow-right
+{
+    position: absolute;
+    top: 61%;
+    right: -3%;
+
+    cursor: pointer; 
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 /* Slider */
@@ -2944,7 +2994,7 @@ a:hover
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 12px;
     line-height: 20px;
 
     position: absolute;
@@ -2958,7 +3008,7 @@ a:hover
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #b42020;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2966,5 +3016,5 @@ a:hover
 .slick-dots li.slick-active button:before
 {
     opacity: .75; 
-    color: black;
+    color: #b42020;
 }
