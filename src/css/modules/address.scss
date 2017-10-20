@@ -1,0 +1,53 @@
+.address {
+  display: flex;
+  flex-direction: row;
+}
+
+.address__map {
+  width: 40%;
+  height: 416px;
+}
+
+.address__info {
+  height: 416px;
+  background: url(../img/address/background.jpg) left top;
+  padding-left: 139px;
+  padding-top: 147px;
+  width: 60%;
+}
+
+.address__block {
+  width: 451px;
+}
+
+.address__head {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.address__city {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.address__phone, .address__time {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.address__phone--bold, .address__time--bold {
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+.address__phone {
+  padding-bottom: 9px;
+}
