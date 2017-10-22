@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   position: absolute;
   bottom: -91px;
   left: 50%;
@@ -10,7 +11,7 @@
   z-index: 1;
 }
 
-.building__picture {
+a.building__picture {
   padding: 0;
   margin: 0;
   width: 293px;
@@ -47,4 +48,30 @@
   opacity: 1;
   transition: opacity 1s ease;
   color: white;
+}
+
+@media only screen and (min-device-width: 768px) and (max-width: 1199px) {
+  .building {
+    width: 100%;
+    position: static;
+    flex-direction: row;
+    transform: none;
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  a.building__picture {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+  .building {
+    width: 100%;
+    position: static;
+    flex-direction: column;
+    transform: none;
+    align-items: center;
+    padding-top: 10px;
+  }
 }

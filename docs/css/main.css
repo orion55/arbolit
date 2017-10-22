@@ -869,9 +869,11 @@ a:hover {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
-.building__picture {
+a.building__picture {
 	position: relative;
 	overflow: hidden;
 	width: 293px;
@@ -883,12 +885,12 @@ a:hover {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
 
-.building__picture:hover .building__image {
+a.building__picture:hover .building__image {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
 
-.building__picture:hover .building__title {
+a.building__picture:hover .building__title {
 	opacity: 0;
 }
 
@@ -2659,12 +2661,66 @@ a:hover {
 	display: none;
 }
 
+.promo__wrap {
+	width: 100%;
+}
+
+.promo__separator {
+	width: 45px;
+}
+
+.promo__bigdigital {
+	left: 59%;
+}
+
+.promo__item {
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.promo__form {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.promo {
+	height: auto;
+}
+
+.promo__symbol {
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.building {
+	position: static;
+	flex-direction: row;
+	width: 100%;
+	padding-top: 15px;
+	-webkit-transform: none;
+	transform: none;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+a.building__picture {
+	width: 50%;
+	height: 100%;
+}
+
 }
 
 @media only screen and (min-device-width: 320px) and (max-width: 767px) {
 
 .hamburger {
 	display: block;
+	padding: 9px;
 }
 
 .header__wrap {
@@ -2707,6 +2763,64 @@ a.mm-title {
 
 .phone__item {
 	padding: 0;
+}
+
+.promo__wrap {
+	width: 100%;
+}
+
+.promo__title {
+	font-size: 26px;
+}
+
+.promo__bigdigital {
+	display: none;
+}
+
+.promo__separator:after {
+	font-size: 35px;
+	content: '2';
+	color: #b42020;
+}
+
+.promo__separator {
+	width: auto;
+	padding-left: 5px;
+}
+
+.promo__item {
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.promo__form {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.promo {
+	height: auto;
+}
+
+.promo__symbol {
+	display: none;
+}
+
+.building {
+	position: static;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 10px;
+	-webkit-transform: none;
+	transform: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 }

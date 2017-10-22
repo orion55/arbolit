@@ -37,6 +37,10 @@ $(document).ready(function () {
             API.open();
         });
 
+        $("a.nav__link").click(function () {
+            API.close();
+        });
+
         API.bind("open:finish", function () {
             setTimeout(function () {
                 $icon.addClass("is-active");
@@ -63,6 +67,14 @@ $(document).ready(function () {
             phone.show();
         });
     }
+});
+$(document).ready(function () {
+    $("a.nav__link").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        $('html, body').animate({scrollTop: destination}, 1000);
+        return false;
+    });
 });
 $(document).ready(function () {
     $('.slider').slick({

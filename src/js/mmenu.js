@@ -15,6 +15,10 @@ $(document).ready(function () {
             API.open();
         });
 
+        $("a.nav__link").click(function () {
+            API.close();
+        });
+
         API.bind("open:finish", function () {
             setTimeout(function () {
                 $icon.addClass("is-active");

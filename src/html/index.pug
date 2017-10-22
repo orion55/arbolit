@@ -3,14 +3,14 @@ extends block/main.layout.pug
 block content
     .promo
         .promo__wrap.row
-            .promo__wrapper.col-lg-10.col-lg-offset-1
+            .promo__wrapper.col-lg-10.col-lg-offset-1.col-sm-offset-1.col-sm-10.col-xs-offset-1.col-xs-10
                 .promo__text Производство и доставка арболитовых блоков в Челябинской и Оренбургской области, а также в республике Башкортостан
-            .promo__item.col-lg-8.col-lg-offset-2
+            .promo__item.col-lg-8.col-lg-offset-2.col-sm-12.col-xs-12
                 .promo__title Платите за отопление в
                     span.promo__separator
                     = ' раза меньше благодаря использованию арболитовых блоков при строительстве дома!'
                 img.promo__bigdigital(src="img/promo/two.png" alt="two")
-            .promo__item
+            .promo__item.col-sm-12.col-xs-12
                 .promo__form
                     .bid__block
                         .bid__title Получите прайс-лист и
@@ -37,10 +37,10 @@ block content
 
         .building.row
             each title, x in {1:'Бани', 2:'Гаражи', 3:'Коттеджи', 4:'Коттеджи'}
-                a.building__picture.col-xs-3(href="#")
+                a.building__picture.col-lg-3.col-sm-6.col-xs-12(href="#")
                     img.building__image(src="img/building/build0" + x + ".jpg" alt=title)
                     .building__title= title
-    .manufacture
+    .manufacture#about
         .manufacture__wrap
             .manufacture__box.row
                 each title, x in {1:'Экологически<br /> чистый материал', 2:'Собственный цех по производству', 3:'Согласно<br />ГОСТ-19222-84', 4:'Контрольные образцы испытываются в лаборатории', 5:'Работаем на рынке строительных материалов с 2013 года', 6:'Автоматизированное производство снижает уровень брака на 99%'}
@@ -64,7 +64,7 @@ block content
                 .manufacture__subtitle Панели-перемычки:
                 .manufacture__subtitle
                     .manufacture__subtitle--two для перекрытия дверных и оконных проёмов
-    .cost
+    .cost#calculation
         .cost__wrap
             .cost__head Рассчитайте стоимость арболита для Вашего проекта и получите скидку
             form.cost__form(method="post" action="#" name="cost__form")
@@ -82,7 +82,7 @@ block content
                         input.form__radio#cost-option-two(type="radio" name="radio" value="50х35х20")
                         .control_indicator
                 button.btn.btn--cost.hvr-radial-out(type="submit") Получить стоимость по смс
-    .info
+    .info#benefits
         .info__wrap
             .info__why
                 .info__head Почему лучше строить дома из арболитовых блоков?
@@ -155,7 +155,7 @@ block content
                             .info__paragraph Мы заключаем договор поставки
                         .info__strip.info__strip--four
                         .info__strip.info__strip--five
-            .info__process
+            .info__process#order
                 .info__head.info__head--process Посмотреть процесс производства арболитовых блоков:
                 .info__cont
                     .info__bid
@@ -194,7 +194,7 @@ block content
                     img.slider__arrow-left-pict(src="img/info/arrow-left.png" alt="slider__arrow-left")
                 .slid__arrow-right
                     img.slider__arrow-right-pict(src="img/info/arrow-right.png" alt="slider__arrow-right")
-    .address
+    .address#contacts
         .address__map#map
         .address__info
             .address__block
