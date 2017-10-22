@@ -37,7 +37,8 @@
 .info__box {
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  justify-content: left;
 }
 
 .info__title {
@@ -133,17 +134,63 @@
 }
 
 .info__bigpicture {
-  background: url(../img/info/digital.png) center top;
+  //background: url(../img/info/digital.png) center top;
   width: 988px;
   height: 387px;
   margin: 0 auto;
+  //opacity: 0.5;
+  //position: relative;
 }
 
 .info__row {
   display: flex;
   flex-direction: row;
-  padding-top: 108px;
+  padding-top: 0;
   text-align: center;
+  position: relative;
+}
+
+.info__row--two {
+  padding-top: 30px;
+  margin-left: -73px;
+}
+
+.info__strip {
+  position: absolute;
+  //color: $color-red;
+  background-color: $color-red;
+  height: 5px;
+}
+
+.info__strip--one {
+  top: 51px;
+  left: 327px;
+  width: 321px;
+}
+
+.info__strip--two {
+  top: 51px;
+  left: 751px;
+  width: 157px;
+}
+
+.info__strip--three {
+  top: 51px;
+  left: 907px;
+  width: 5px;
+  height: 239px;
+}
+
+.info__strip--four {
+  top: 81px;
+  left: 180px;
+  width: 323px;
+}
+
+.info__strip--five {
+  top: 81px;
+  left: 607px;
+  width: 326px;
 }
 
 .info__section--one {
@@ -172,11 +219,6 @@
 
 .info__paragraph--bold {
   font-weight: 700;
-}
-
-.info__row--two {
-  padding-top: 140px;
-  margin-left: -73px;
 }
 
 .info__production {

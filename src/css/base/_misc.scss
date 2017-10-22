@@ -110,3 +110,7 @@
   -webkit-transform: scale(2);
   transform: scale(2);
 }
+
+.header .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+  background-color: white;
+}

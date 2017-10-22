@@ -35,7 +35,7 @@ gulp.task('sass', function () {
         .pipe(sass())
         .pipe(autoPrefixer())
         .pipe(cssComb())
-        // .pipe(cmq({log: true}))
+        .pipe(cmq({log: true}))
         .pipe(concat('main.css'))
         .pipe(gulp.dest('docs/css'))
         .pipe(rename({

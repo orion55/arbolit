@@ -1,17 +1,21 @@
 header.header
     .header__wrap.row
-        .logo.col-lg-1
+        button#mmenu-icon.hamburger.hamburger--collapse.col-xs-2(type="button")
+            span.hamburger-box
+                span.hamburger-inner
+
+        .logo.col-lg-1.col-sm-1.col-xs-10
             a.logo__link.hvr-bounce-in(href="#")
                 img.logo__img(src="img/logo.png" alt="logo")
 
-        nav.nav.col-lg-7
+        nav.nav.col-lg-7.col-sm-11.col-xs-11#my-menu
             ul.nav__list
                 - var links = ['О нас', 'Расчёт стоимости', 'Преимущества', 'Заказ', 'Контакты'];
                     each val in links
                         li.nav__item
                             a.nav__link.hvr-underline-from-center(href="#")= val
 
-        .phone.col-lg-4
+        .phone.col-lg-4.col-sm-12.col-xs-12
             .phone__item
                 .phone__number
                     span.phone__wide +7 (495)
