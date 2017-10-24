@@ -53,3 +53,23 @@
   text-align: center;
   margin: 0 auto;
 }
+
+@media only screen and (min-device-width: 768px) and (max-width: 1199px) {
+  .btn--info {
+    position: static;
+    transform: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+  .btn--info {
+    position: static;
+    transform: none;
+    &:hover {
+      color: white;
+    }
+  }
+}

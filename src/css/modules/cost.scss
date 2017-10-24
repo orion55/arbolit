@@ -53,3 +53,35 @@
   flex-direction: row;
   justify-content: center;
 }
+
+@media only screen and (min-device-width: 768px) and (max-width: 1199px) {
+  .cost {
+    height: auto;
+  }
+  .cost__wrap {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+  .cost {
+    height: auto;
+  }
+  .cost__wrap {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .cost__head{
+    width: 100%;
+  }
+  .cost__form{
+    width: 100%;
+  }
+  .cost__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
