@@ -5,6 +5,7 @@
 .header__wrap {
   width: 1170px;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 .logo {
@@ -92,13 +93,14 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .hamburger {
     display: block;
     //padding: 9px;
   }
   .header__wrap {
     width: 100%;
+    min-width: 320px;
   }
   .phone {
     font-size: 10px;

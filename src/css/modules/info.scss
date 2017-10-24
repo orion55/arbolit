@@ -8,6 +8,7 @@
   width: 1170px;
   margin: 0 auto;
   padding-top: 95px;
+  min-width: 320px;
 }
 
 .info__head {
@@ -235,6 +236,9 @@
   margin-right: 43px;
   float: left;
   margin-top: 42px;
+  //position: absolute;
+  //left: 0;
+  //top: 0;
 }
 
 .info__bid-head {
@@ -255,6 +259,7 @@
 .info__bid-group {
   padding-bottom: 10px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .info__slider {
@@ -419,13 +424,14 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .info {
     height: auto;
   }
   .info__wrap {
     width: 100%;
     padding-top: 20px;
+    min-width: 320px;
   }
   .info__why {
     width: 95%;

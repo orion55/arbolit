@@ -8,6 +8,7 @@
   width: 1170px;
   margin: 0 auto;
   padding-top: 94px;
+  min-width: 320px;
 }
 
 .cost__head {
@@ -65,13 +66,14 @@
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .cost {
     height: auto;
   }
   .cost__wrap {
     width: 100%;
     padding-top: 20px;
+    min-width: 320px;
   }
   .cost__head{
     width: 100%;
