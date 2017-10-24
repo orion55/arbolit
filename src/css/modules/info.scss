@@ -398,6 +398,25 @@
     margin: 0 auto 40px auto;
     width: 80%;
   }
+  .slider__arrow-left {
+    top: 75%;
+    left: 0;
+  }
+  .slider__arrow-right {
+    top: 75%;
+  }
+  .info__slider {
+    margin-bottom: 40px;
+  }
+  .info__life {
+    width: 100%;
+  }
+  .slid__arrow-left {
+    left: 0;
+  }
+  .slid__arrow-right {
+    right: 0;
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-width: 767px) {
@@ -481,5 +500,42 @@
   }
   .info__row--two {
     margin-left: 0;
+  }
+  .info__bid {
+    float: none;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+  .slider__arrow-left {
+    top: 75%;
+    left: 0;
+  }
+  .slider__arrow-right {
+    top: 75%;
+  }
+  .info__slider {
+    margin-bottom: 40px;
+  }
+  .slider__img {
+    width: 95%;
+  }
+  .info__life {
+    width: 100%;
+  }
+  .slid__arrow-left {
+    left: 0;
+  }
+  .slid__arrow-right {
+    right: 0;
+  }
+  .info_head--life {
+    width: 95%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  .info__house {
+    width: 100%;
   }
 }

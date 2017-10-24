@@ -2879,6 +2879,79 @@ a.building__picture {
 	margin: 0 auto 40px auto;
 }
 
+.slider__arrow-left {
+	top: 75%;
+	left: 0;
+}
+
+.slider__arrow-right {
+	top: 75%;
+}
+
+.info__slider {
+	margin-bottom: 40px;
+}
+
+.info__life {
+	width: 100%;
+}
+
+.slid__arrow-left {
+	left: 0;
+}
+
+.slid__arrow-right {
+	right: 0;
+}
+
+.address {
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.address__map {
+	width: 100%;
+	height: 300px;
+}
+
+.address__info {
+	width: 100%;
+	height: auto;
+}
+
+.address__info {
+	padding: 40px 0;
+}
+
+.address__block {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.footer {
+	flex-direction: column;
+	height: auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.logo__link--footer {
+	padding-bottom: 10px;
+}
+
+.footer__separator {
+	display: none;
+}
+
+.footer__info {
+	width: 100%;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
 }
 
 @media only screen and (min-device-width: 320px) and (max-width: 767px) {
@@ -2986,6 +3059,10 @@ a.mm-title {
 	width: 90%;
 	margin-right: 0;
 	margin-bottom: 10px;
+}
+
+.form__input--bid {
+	margin-right: 0;
 }
 
 .building {
@@ -3187,6 +3264,105 @@ a.mm-title {
 
 .info__row--two {
 	margin-left: 0;
+}
+
+.info__bid {
+	float: none;
+	width: 90%;
+	margin: 0 auto 20px auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.slider__arrow-left {
+	top: 75%;
+	left: 0;
+}
+
+.slider__arrow-right {
+	top: 75%;
+}
+
+.info__slider {
+	margin-bottom: 40px;
+}
+
+.slider__img {
+	width: 95%;
+}
+
+.info__life {
+	width: 100%;
+}
+
+.slid__arrow-left {
+	left: 0;
+}
+
+.slid__arrow-right {
+	right: 0;
+}
+
+.info_head--life {
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.info__house {
+	width: 100%;
+}
+
+.address {
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.address__map {
+	width: 100%;
+	height: 300px;
+}
+
+.address__info {
+	width: 100%;
+	height: auto;
+}
+
+.address__info {
+	padding: 40px 0;
+}
+
+.address__block {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.address__city {
+	padding-bottom: 20px;
+}
+
+.footer {
+	flex-direction: column;
+	height: auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.logo__link--footer {
+	padding-bottom: 10px;
+}
+
+.footer__separator {
+	display: none;
+}
+
+.footer__info {
+	width: 100%;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 }
